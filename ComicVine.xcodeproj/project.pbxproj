@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002FBD771C5FD62E0058C9BF /* ComicVineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBD761C5FD62E0058C9BF /* ComicVineUITests.m */; };
+		002FBD881C5FD6960058C9BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBD851C5FD6960058C9BF /* AppDelegate.m */; };
+		002FBD891C5FD6960058C9BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBD871C5FD6960058C9BF /* ViewController.m */; };
+		002FBD8E1C5FD6A10058C9BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002FBD8A1C5FD6A10058C9BF /* Assets.xcassets */; };
+		002FBD911C5FD6A10058C9BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBD8D1C5FD6A10058C9BF /* main.m */; };
+		002FBD941C5FD6DD0058C9BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002FBD921C5FD6DD0058C9BF /* LaunchScreen.storyboard */; };
+		002FBD951C5FD6DD0058C9BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002FBD931C5FD6DD0058C9BF /* Main.storyboard */; };
+		002FBD9A1C5FE0270058C9BF /* Episode.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBD991C5FE0270058C9BF /* Episode.m */; };
+		002FBD9D1C5FE03F0058C9BF /* FeedAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBD9C1C5FE03F0058C9BF /* FeedAPI.m */; };
+		002FBDA01C5FE0660058C9BF /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBD9F1C5FE0660058C9BF /* Character.m */; };
+		002FBDA61C6016CE0058C9BF /* CVEmptyDataSetSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBDA51C6016CE0058C9BF /* CVEmptyDataSetSource.m */; };
+		002FBDA91C60175B0058C9BF /* CVLoadingErrorEmptyDataSetSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBDA81C60175B0058C9BF /* CVLoadingErrorEmptyDataSetSource.m */; };
+		BAE015F6F82985F08A247618 /* libPods-ComicVine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F7A31E143DFD4CF3323D88 /* libPods-ComicVine.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		002FBD731C5FD62E0058C9BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002FBD511C5FD62E0058C9BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 002FBD581C5FD62E0058C9BF;
+			remoteInfo = ComicVine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002FBD591C5FD62E0058C9BF /* ComicVine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicVine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		002FBD721C5FD62E0058C9BF /* ComicVineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComicVineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		002FBD761C5FD62E0058C9BF /* ComicVineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicVineUITests.m; sourceTree = "<group>"; };
+		002FBD781C5FD62E0058C9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002FBD841C5FD6960058C9BF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		002FBD851C5FD6960058C9BF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		002FBD861C5FD6960058C9BF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/ViewController.h; sourceTree = "<group>"; };
+		002FBD871C5FD6960058C9BF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Classes/ViewController.m; sourceTree = "<group>"; };
+		002FBD8A1C5FD6A10058C9BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Other Resources/Assets.xcassets"; sourceTree = "<group>"; };
+		002FBD8C1C5FD6A10058C9BF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Other Resources/Info.plist"; sourceTree = "<group>"; };
+		002FBD8D1C5FD6A10058C9BF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Other Resources/main.m"; sourceTree = "<group>"; };
+		002FBD921C5FD6DD0058C9BF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Other Resources/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		002FBD931C5FD6DD0058C9BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Other Resources/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		002FBD981C5FE0270058C9BF /* Episode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Episode.h; path = API/Models/Episode.h; sourceTree = "<group>"; };
+		002FBD991C5FE0270058C9BF /* Episode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Episode.m; path = API/Models/Episode.m; sourceTree = "<group>"; };
+		002FBD9B1C5FE03F0058C9BF /* FeedAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedAPI.h; path = API/Feed/FeedAPI.h; sourceTree = "<group>"; };
+		002FBD9C1C5FE03F0058C9BF /* FeedAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedAPI.m; path = API/Feed/FeedAPI.m; sourceTree = "<group>"; };
+		002FBD9E1C5FE0660058C9BF /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Character.h; path = API/Models/Character.h; sourceTree = "<group>"; };
+		002FBD9F1C5FE0660058C9BF /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Character.m; path = API/Models/Character.m; sourceTree = "<group>"; };
+		002FBDA21C5FE4910058C9BF /* ComicVine-Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ComicVine-Prefix.h"; path = "Other Resources/ComicVine-Prefix.h"; sourceTree = "<group>"; };
+		002FBDA41C6016CE0058C9BF /* CVEmptyDataSetSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVEmptyDataSetSource.h; path = "Other Resources/EmptyDataSet/CVEmptyDataSetSource.h"; sourceTree = "<group>"; };
+		002FBDA51C6016CE0058C9BF /* CVEmptyDataSetSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CVEmptyDataSetSource.m; path = "Other Resources/EmptyDataSet/CVEmptyDataSetSource.m"; sourceTree = "<group>"; };
+		002FBDA71C60175B0058C9BF /* CVLoadingErrorEmptyDataSetSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVLoadingErrorEmptyDataSetSource.h; path = "Other Resources/EmptyDataSet/CVLoadingErrorEmptyDataSetSource.h"; sourceTree = "<group>"; };
+		002FBDA81C60175B0058C9BF /* CVLoadingErrorEmptyDataSetSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CVLoadingErrorEmptyDataSetSource.m; path = "Other Resources/EmptyDataSet/CVLoadingErrorEmptyDataSetSource.m"; sourceTree = "<group>"; };
+		75C141BB930A22222C265604 /* Pods-ComicVine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicVine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComicVine/Pods-ComicVine.debug.xcconfig"; sourceTree = "<group>"; };
+		7622B24F97E58F37A7EE9311 /* Pods-ComicVine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicVine.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComicVine/Pods-ComicVine.release.xcconfig"; sourceTree = "<group>"; };
+		B3F7A31E143DFD4CF3323D88 /* libPods-ComicVine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComicVine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002FBD561C5FD62E0058C9BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE015F6F82985F08A247618 /* libPods-ComicVine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002FBD6F1C5FD62E0058C9BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002FBD501C5FD62E0058C9BF = {
+			isa = PBXGroup;
+			children = (
+				002FBD5B1C5FD62E0058C9BF /* ComicVine */,
+				002FBD751C5FD62E0058C9BF /* ComicVineUITests */,
+				002FBD5A1C5FD62E0058C9BF /* Products */,
+				F41E8D89D545A74D80742497 /* Pods */,
+				73D4393B31472CFCD5F80125 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		002FBD5A1C5FD62E0058C9BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				002FBD591C5FD62E0058C9BF /* ComicVine.app */,
+				002FBD721C5FD62E0058C9BF /* ComicVineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		002FBD5B1C5FD62E0058C9BF /* ComicVine */ = {
+			isa = PBXGroup;
+			children = (
+				002FBD811C5FD67D0058C9BF /* API */,
+				002FBD821C5FD6820058C9BF /* Classes */,
+				002FBD831C5FD6870058C9BF /* Other Resources */,
+			);
+			path = ComicVine;
+			sourceTree = "<group>";
+		};
+		002FBD5C1C5FD62E0058C9BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		002FBD751C5FD62E0058C9BF /* ComicVineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				002FBD761C5FD62E0058C9BF /* ComicVineUITests.m */,
+				002FBD781C5FD62E0058C9BF /* Info.plist */,
+			);
+			path = ComicVineUITests;
+			sourceTree = "<group>";
+		};
+		002FBD811C5FD67D0058C9BF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				002FBD971C5FDEF10058C9BF /* Feed */,
+				002FBD961C5FDEE90058C9BF /* Models */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		002FBD821C5FD6820058C9BF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				002FBD841C5FD6960058C9BF /* AppDelegate.h */,
+				002FBD851C5FD6960058C9BF /* AppDelegate.m */,
+				002FBD861C5FD6960058C9BF /* ViewController.h */,
+				002FBD871C5FD6960058C9BF /* ViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		002FBD831C5FD6870058C9BF /* Other Resources */ = {
+			isa = PBXGroup;
+			children = (
+				002FBDA31C60168C0058C9BF /* EmptyDataSet */,
+				002FBDA21C5FE4910058C9BF /* ComicVine-Prefix.h */,
+				002FBD921C5FD6DD0058C9BF /* LaunchScreen.storyboard */,
+				002FBD931C5FD6DD0058C9BF /* Main.storyboard */,
+				002FBD8A1C5FD6A10058C9BF /* Assets.xcassets */,
+				002FBD8C1C5FD6A10058C9BF /* Info.plist */,
+				002FBD8D1C5FD6A10058C9BF /* main.m */,
+				002FBD5C1C5FD62E0058C9BF /* Supporting Files */,
+			);
+			name = "Other Resources";
+			sourceTree = "<group>";
+		};
+		002FBD961C5FDEE90058C9BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				002FBD981C5FE0270058C9BF /* Episode.h */,
+				002FBD991C5FE0270058C9BF /* Episode.m */,
+				002FBD9E1C5FE0660058C9BF /* Character.h */,
+				002FBD9F1C5FE0660058C9BF /* Character.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		002FBD971C5FDEF10058C9BF /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				002FBD9B1C5FE03F0058C9BF /* FeedAPI.h */,
+				002FBD9C1C5FE03F0058C9BF /* FeedAPI.m */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		002FBDA31C60168C0058C9BF /* EmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				002FBDA41C6016CE0058C9BF /* CVEmptyDataSetSource.h */,
+				002FBDA51C6016CE0058C9BF /* CVEmptyDataSetSource.m */,
+				002FBDA71C60175B0058C9BF /* CVLoadingErrorEmptyDataSetSource.h */,
+				002FBDA81C60175B0058C9BF /* CVLoadingErrorEmptyDataSetSource.m */,
+			);
+			name = EmptyDataSet;
+			sourceTree = "<group>";
+		};
+		73D4393B31472CFCD5F80125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3F7A31E143DFD4CF3323D88 /* libPods-ComicVine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F41E8D89D545A74D80742497 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75C141BB930A22222C265604 /* Pods-ComicVine.debug.xcconfig */,
+				7622B24F97E58F37A7EE9311 /* Pods-ComicVine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		002FBD581C5FD62E0058C9BF /* ComicVine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002FBD7B1C5FD62E0058C9BF /* Build configuration list for PBXNativeTarget "ComicVine" */;
+			buildPhases = (
+				B1D27C50A453C6B8338C4DDC /* Check Pods Manifest.lock */,
+				002FBD551C5FD62E0058C9BF /* Sources */,
+				002FBD561C5FD62E0058C9BF /* Frameworks */,
+				002FBD571C5FD62E0058C9BF /* Resources */,
+				CD3142D766899EFC5889D141 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComicVine;
+			productName = ComicVine;
+			productReference = 002FBD591C5FD62E0058C9BF /* ComicVine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		002FBD711C5FD62E0058C9BF /* ComicVineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002FBD7E1C5FD62E0058C9BF /* Build configuration list for PBXNativeTarget "ComicVineUITests" */;
+			buildPhases = (
+				002FBD6E1C5FD62E0058C9BF /* Sources */,
+				002FBD6F1C5FD62E0058C9BF /* Frameworks */,
+				002FBD701C5FD62E0058C9BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				002FBD741C5FD62E0058C9BF /* PBXTargetDependency */,
+			);
+			name = ComicVineUITests;
+			productName = ComicVineUITests;
+			productReference = 002FBD721C5FD62E0058C9BF /* ComicVineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		002FBD511C5FD62E0058C9BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Phunware;
+				TargetAttributes = {
+					002FBD581C5FD62E0058C9BF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					002FBD711C5FD62E0058C9BF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 002FBD581C5FD62E0058C9BF;
+					};
+				};
+			};
+			buildConfigurationList = 002FBD541C5FD62E0058C9BF /* Build configuration list for PBXProject "ComicVine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 002FBD501C5FD62E0058C9BF;
+			productRefGroup = 002FBD5A1C5FD62E0058C9BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				002FBD581C5FD62E0058C9BF /* ComicVine */,
+				002FBD711C5FD62E0058C9BF /* ComicVineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		002FBD571C5FD62E0058C9BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002FBD951C5FD6DD0058C9BF /* Main.storyboard in Resources */,
+				002FBD941C5FD6DD0058C9BF /* LaunchScreen.storyboard in Resources */,
+				002FBD8E1C5FD6A10058C9BF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002FBD701C5FD62E0058C9BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1D27C50A453C6B8338C4DDC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD3142D766899EFC5889D141 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComicVine/Pods-ComicVine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		002FBD551C5FD62E0058C9BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002FBD9D1C5FE03F0058C9BF /* FeedAPI.m in Sources */,
+				002FBD891C5FD6960058C9BF /* ViewController.m in Sources */,
+				002FBDA61C6016CE0058C9BF /* CVEmptyDataSetSource.m in Sources */,
+				002FBD9A1C5FE0270058C9BF /* Episode.m in Sources */,
+				002FBDA91C60175B0058C9BF /* CVLoadingErrorEmptyDataSetSource.m in Sources */,
+				002FBD911C5FD6A10058C9BF /* main.m in Sources */,
+				002FBD881C5FD6960058C9BF /* AppDelegate.m in Sources */,
+				002FBDA01C5FE0660058C9BF /* Character.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002FBD6E1C5FD62E0058C9BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002FBD771C5FD62E0058C9BF /* ComicVineUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		002FBD741C5FD62E0058C9BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 002FBD581C5FD62E0058C9BF /* ComicVine */;
+			targetProxy = 002FBD731C5FD62E0058C9BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		002FBD791C5FD62E0058C9BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		002FBD7A1C5FD62E0058C9BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		002FBD7C1C5FD62E0058C9BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C141BB930A22222C265604 /* Pods-ComicVine.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ComicVine/Other Resources/ComicVine-Prefix.h";
+				INFOPLIST_FILE = "$(SRCROOT)/ComicVine/Other Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.ComicVine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		002FBD7D1C5FD62E0058C9BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7622B24F97E58F37A7EE9311 /* Pods-ComicVine.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ComicVine/Other Resources/ComicVine-Prefix.h";
+				INFOPLIST_FILE = "$(SRCROOT)/ComicVine/Other Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.ComicVine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		002FBD7F1C5FD62E0058C9BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ComicVineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.ComicVineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ComicVine;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		002FBD801C5FD62E0058C9BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ComicVineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phunware.ComicVineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ComicVine;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		002FBD541C5FD62E0058C9BF /* Build configuration list for PBXProject "ComicVine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002FBD791C5FD62E0058C9BF /* Debug */,
+				002FBD7A1C5FD62E0058C9BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002FBD7B1C5FD62E0058C9BF /* Build configuration list for PBXNativeTarget "ComicVine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002FBD7C1C5FD62E0058C9BF /* Debug */,
+				002FBD7D1C5FD62E0058C9BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002FBD7E1C5FD62E0058C9BF /* Build configuration list for PBXNativeTarget "ComicVineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002FBD7F1C5FD62E0058C9BF /* Debug */,
+				002FBD801C5FD62E0058C9BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 002FBD511C5FD62E0058C9BF /* Project object */;
+}
